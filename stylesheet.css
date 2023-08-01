@@ -13,24 +13,36 @@ body {
     height: 150px;
     background-image: url(Images/banner.jpg);
     background-size: cover;
-    background-position: left;
+    overflow: hidden;
 }
-ul {
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+.topnav a {
+    color: white;
+  }
+
+  li a:hover {
+    background-color: #04AA6D;
+  }
+
+  li a {
+    display: block;
+    padding: 15px;
+    margin-left: 120px;
+    float: left;
+  }
+
+  ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
   }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    padding: 15px;
-    margin-left: 120px;
-  }
+
 .card1{
     display: flex;
     flex-direction: column;
@@ -38,6 +50,7 @@ ul {
     text-align: center;
     overflow:hidden
 }
+
 
 .card-container-one{
     display: grid;
@@ -47,6 +60,8 @@ ul {
     margin-left: 160px;
     margin-right: 100px;
     background-color: #F08080;
+    grid-row: 100px;
+    border-radius: 25px;
 }
 .card-container-two{
     display: grid;
@@ -56,6 +71,7 @@ ul {
     margin-left: 160px;
     margin-right: 100px;
     background-color: #45B39D;
+    border-radius: 25px;
 
 }
 .card-container-three{
@@ -66,6 +82,7 @@ ul {
     margin-left: 160px;
     margin-right: 100px;
     background-color: #8E44AD;
+    border-radius: 25px;
 }
 .card-container-four{
     display: grid;
@@ -75,7 +92,8 @@ ul {
     margin-left: 160px;
     margin-right: 100px;
     background-color: #2471A3;
-    overflow: none
+    overflow: none;
+    border-radius: 25px;
 }
 .card-container-five{
     display: grid;
@@ -90,6 +108,7 @@ ul {
     flex-direction: column;
     right: 40px;
     top: 121px;
+    justify-content: center;
    
 }
 
@@ -111,30 +130,34 @@ ul {
     margin-right: auto;
 }
 
-.catego-pictures{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 90%;
-    height: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .footer{
     text-align: center;
     padding: 3px;
-    background-color: FFFFFF;
+    font-size: xx-small;
+}
+
+#carouselExample, #carouselExample2, #carouselExample3{
+    display: flex;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+img{
+    height: 100%;
+}
+
+.adoptame{
+    cursor: pointer;
+}
+.bottom{
     font-size: x-small;
 }
 
-.button1{
-    padding-top: 10%;
-    cursor: pointer;
-
-}
-
-.bottom{
-    font-size: xx-small;
-
-}
