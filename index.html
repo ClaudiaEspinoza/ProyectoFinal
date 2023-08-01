@@ -4,24 +4,29 @@
   <meta charset="UTF-8">
   <title>Adopta!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
 <body>
   <div class="header"> 
-    <h1> ¡Adopta un <span style="color:#17A589">amigo!</h1></style>
-      <nav>
+    <h1  id="titulo" class="animate__animated animate__flash animate__infinite"> ¡Adopta un <span style="color:#17A589">amigo!</h1></style>
+      <div class="topnav">
         <ul>
-          <li><a href="#">Inicio</a></li>
+          <li><a class="bi bi-house" href="#" style="font-size: larger;"></i> </a></li>
           <li><a href="#">Nosotros</a></li>
           <li><a href="#">Tienda</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Galeria</a></li>
           <li><a href="#">Contacto</a></li>
         </ul>
-      </nav>
-      <div class="hero-banner"></div> 
+      </div>
+      <div class="hero-banner"></div> </br>
         <h3><b>Nuestros amigos:</b></h3> 
   </div>
   <div class="card-container-one">
@@ -32,9 +37,34 @@
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
           Numquam, quae dicta accusantium beatae reprehenderit </br>
           possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat  </br>
-          quidem, consequuntur enim iure tempora pariatur?
-          <div class="button">
-          <button type="button" onclick="alert('Debes de cumplir con los protocolos de adopción')">Adoptame!</button>
+          quidem, consequuntur enim iure tempora pariatur? 
+          <!-- Button trigger modal -->
+          <div class="adoptame">
+            <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
+          </div><b style="font-size: x-small;">Adóptame!</b>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="exampleModalLabel">Seguro que deseas adoptar?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <div class="modal-body">
+               <p>Deberás cumplir con los siguientes protocolos:</p>
+               <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              </ol>
+                </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button> 
+                  </div>
+              </div>
+           </div>
           </div>
         </div>
       </div>
@@ -46,11 +76,36 @@
         <div class="description">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
         Numquam, quae dicta accusantium beatae reprehenderit </br>
-        possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat quidem, </br>
-        consequuntur enim iure tempora pariatur?
-       <div class="button">
-        <button type="button" onclick="alert('Debes de cumplir con los protocolos de adopción')">Adoptame!</button>
-        </div>
+        possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat  </br>
+        quidem, consequuntur enim iure tempora pariatur?
+          <!-- Button trigger modal -->
+          <div class="adoptame">
+            <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
+          </div><b style="font-size: x-small;">Adóptame!</b>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="exampleModalLabel">Seguro que deseas adoptar?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <div class="modal-body">
+               <p>Deberás cumplir con los siguientes protocolos:</p>
+               <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              </ol>
+                </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button> 
+                  </div>
+              </div>
+           </div>
+          </div>
       </div>
     </div>
       <div class="card1">
@@ -58,74 +113,234 @@
         <h2>Jack</h2>
          Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
          Numquam, quae dicta accusantium beatae reprehenderit </br>
-         possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat quidem, </br>
-         onsequuntur enim iure tempora pariatur?
-        <div class="button">    
-        <button type="button" onclick="alert('Debes de cumplir con los protocolos de adopción')">Adoptame!</button>
-        </div>
+         possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat </br>
+         quidem, onsequuntur enim iure tempora pariatur?
+          <!-- Button trigger modal -->
+          <div class="adoptame">
+            <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
+          </div><b style="font-size: x-small;">Adóptame!</b>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="exampleModalLabel">Seguro que deseas adoptar?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <div class="modal-body">
+               <p>Deberás cumplir con los siguientes protocolos:</p>
+               <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              </ol>
+                </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button> 
+                  </div>
+              </div>
+           </div>
+          </div>
       </div>
     </div>
     <div class="card-container-three">
       <div class="card1">
         <div class="allpictures"><img src="Images/kuky.jpg" alt=""></div>
         <h2>Kuky</h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
-        Numquam, quae dicta accusantium beatae reprehenderit </br>
-        possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat quidem, </br>
+        Lorem ipsum, dolor sit amet consectetur </br>
+        adipisicing elit. Numquam, quae dicta </br>
+        accusantium beatae reprehenderit </br>
+        possimus dolorem odit quas a ipsum at </br>
+        voluptatem, ipsa quaerat quidem, </br>
         consequuntur enim iure tempora pariatur?
-        <div class="button">    
-        <button type="button" onclick="alert('Debes de cumplir con los protocolos de adopción')">Adoptame!</button>
-        </div>
+          <!-- Button trigger modal -->
+          <div class="adoptame">
+            <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
+          </div><b style="font-size: x-small;">Adóptame!</b>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="exampleModalLabel">Seguro que deseas adoptar?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <div class="modal-body">
+               <p>Deberás cumplir con los siguientes protocolos:</p>
+               <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              </ol>
+                </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button> 
+                  </div>
+              </div>
+           </div>
+          </div>
       </div>
       <div class="card1">
         <div class="allpictures"><img src="Images/wisko.jpeg" alt=""></div>
         <h2>Wisko</h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
-        Numquam, quae dicta accusantium beatae reprehenderit </br>
-        possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat quidem, </br>
+        Lorem ipsum, dolor sit amet consectetur </br>
+        adipisicing elit. Numquam, quae dicta </br>
+        accusantium beatae reprehenderit </br>
+        possimus dolorem odit quas a ipsum at </br>
+        voluptatem, ipsa quaerat quidem, </br>
         consequuntur enim iure tempora pariatur?
-        <div class="button">    
-        <button type="button" onclick="alert('Debes de cumplir con los protocolos de adopción')">Adoptame!</button>
-        </div>
+          <!-- Button trigger modal -->
+          <div class="adoptame">
+            <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
+          </div><b style="font-size: x-small;">Adóptame!</b>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="exampleModalLabel">Seguro que deseas adoptar?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <div class="modal-body">
+               <p>Deberás cumplir con los siguientes protocolos:</p>
+               <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              </ol>
+                </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button> 
+                  </div>
+              </div>
+           </div>
+          </div>
      </div>
       <div class="card1">
       <div class="allpictures"><img src="Images/Kaira.jpeg" alt=""></div>
        <h2>Kaira</h2>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
-        Numquam, quae dicta accusantium beatae reprehenderit </br>
-        possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat quidem, </br>
-        consequuntur enim iure tempora pariatur?
-      <div class="button">    
-      <button type="button" onclick="alert('Debes de cumplir con los protocolos de adopción')">Adoptame!</button>
-      </div>
+       Lorem ipsum, dolor sit amet consectetur </br>
+       adipisicing elit. Numquam, quae dicta </br>
+       accusantium beatae reprehenderit </br>
+       possimus dolorem odit quas a ipsum at </br>
+       voluptatem, ipsa quaerat quidem, </br>
+       consequuntur enim iure tempora pariatur?
+          <!-- Button trigger modal -->
+          <div class="adoptame">
+            <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
+          </div><b style="font-size: x-small;">Adóptame!</b>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+              <div class="modal-header">
+                 <h1 class="modal-title fs-5" id="exampleModalLabel">Seguro que deseas adoptar?</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                <div class="modal-body">
+               <p>Deberás cumplir con los siguientes protocolos:</p>
+               <ol>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+              </ol>
+                </div>
+                  <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Aceptar</button> 
+                  </div>
+              </div>
+           </div>
+          </div>
       </div>
   </div>
   <h3 style="text-align: center;"> Categorías de amigos</h3>
   <div class="card-container-four">
     <div class="card1">
-      <div class="catego-pictures"><img src="Images/Luna.jpg" alt=""></div>
-      <h1>Perros</h1>      
+      <h1>Perros</h1> 
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/Jack.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/kuky.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
     <div class="card1">
-      <div class="catego-pictures"><img src="Images/gato.jpg" alt=""></div>
       <h1>Gatos</h1>
+      <div id="carouselExample1" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/gatoexample2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Images/gatoexample3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
   </div>
   <div class="card1">
-    <div class="catego-pictures"><img src="Images/cobaya.JPG" alt=""></div>
     <h1>Cobaya</h1>
+    <div id="carouselExample2" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/cobaya.JPG" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/cobaya2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/cobaya3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
 </div>
 <div class="card-container-five">
   <div class="card1">
     <h4>Categorias</h4>
         <div class="bottom">
-          <p> <a href="#Inicio">Perro</a></p>
+          <p> <a href="#Inicio">Perros</a></p>
           <p> <a href="#Nosotros">Gatos</a></p>
           <p> <a href="#Tienda">Cobaya</a></p>
         </div>
   </div>
   <div class="card1">
-    <h4>Sobe Nosotros</h4>
+    <h4>Sobre Nosotros</h4>
     <div class="bottom">
       <p> <a href="#Historia">Nuestra Historia</a></p>
       <p> <a href="#Mision">Misión, Vision, Valores</a></p>
@@ -134,13 +349,19 @@
     </div>
 </div>
 <div class="card1">
-  <h4>Sobe Nosotros</h4>
-
+   <h4>Soporte</h4>
+  <div class="bottom">
+    <p> <a href="#Historia">Preguntas frecuentes </a></p>
+    <p> <a href="#Mision">Ayuda en línea</a></p>
+    <p> <a href="#Politica">Política de privacidad</a></p>
+    <p> <a href="#Terminos">Confianza y seguridad</a></p>
+  </div>
 </div>
 </div>
     <footer class="footer">
-      <p>Author: Perritos en Adopcón<br>
+      <p>Todos los derechos reservados<br>
       <a href="mailto:dopta@example.com">adopta@example.com</a></p>
     </footer>
+
 </body>
 </html>
