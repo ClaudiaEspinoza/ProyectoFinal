@@ -19,14 +19,14 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
-
 }
 .topnav a {
     color: white;
   }
 
   li a:hover {
-    background-color: #04AA6D;
+    background-color: #17A589;
+    background-size: 150%;
   }
 
   li a {
@@ -37,6 +37,7 @@ body {
   }
 
   ul {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -120,6 +121,11 @@ body {
     margin-right: auto;   
 }
 
+.photo:hover{
+    opacity: 0.7;
+    cursor:pointer 
+}
+
 .allpictures{
     display: flex;
     flex-direction: column;
@@ -128,6 +134,11 @@ body {
     height: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.allpictures:hover{
+    opacity: 0.7;
+    cursor:pointer
 }
 
 .footer{
@@ -152,6 +163,8 @@ body {
 
 img{
     height: 100%;
+    border-radius: 25px;
+
 }
 
 .adoptame{
@@ -159,5 +172,20 @@ img{
 }
 .bottom{
     font-size: x-small;
+
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    border-bottom: 1px solid;
+    background: #45B39D;
+  }
+
+.bottom a:link{
+color: black;
 }
 
