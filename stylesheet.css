@@ -103,6 +103,9 @@ body {
     margin-bottom: 80px;
     margin-left: 160px;
     margin-right: 100px;
+    background-color: #D4D6D8;
+    border-radius: 25px;
+
 }
 
 .description{
@@ -172,7 +175,6 @@ img{
 }
 .bottom{
     font-size: x-small;
-
 }
 
 a{
