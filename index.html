@@ -10,6 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
@@ -19,25 +20,25 @@
       <div class="topnav">
         <ul>
           <li><a class="bi bi-house" href="#" style="font-size: larger;"></i> </a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Tienda</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Galeria</a></li>
-          <li><a href="#">Contacto</a></li>
+          <li><a href="#" style="font-size: larger;">Nosotros</a></li>
+          <li><a href="#" style="font-size: larger;">Tienda</a></li>
+          <li><a href="#" style="font-size: larger;">Blog</a></li>
+          <li><a href="#" style="font-size: larger;">Galeria</a></li>
+          <li><a href="#" style="font-size: larger;">Contacto</a></li>
         </ul>
       </div>
       <div class="hero-banner"></div> </br>
-        <h3><b>Nuestros amigos:</b></h3> 
+        <h3><b>Nuestros amigos:</b></h3>
   </div>
-  <div class="card-container-one">
+  <div class="card-container-one" >
     <div class="card1">
-      <div class="photo"><img src="Images/Rocky.JPG" alt=""></div>
+      <div class="photo"><img src="Images/Rocky.JPG" alt="" ></div>
         <div class="description">
           <h2>Rocky</h2>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
-          Numquam, quae dicta accusantium beatae reprehenderit </br>
-          possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat  </br>
-          quidem, consequuntur enim iure tempora pariatur? 
+          Macho de aproximadamente 3 años, talla chica </br>
+          Convive con perros y gatos</br>
+          Le gustan las galletas marías y la fruta </br>
+          Cuenta con protocolo completo (vacunas, desparacitación, etc)
           <!-- Button trigger modal -->
           <div class="adoptame">
             <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
@@ -50,14 +51,13 @@
                  <h1 class="modal-title fs-5" id="exampleModalLabel">Seguro que deseas adoptar?</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-                <div class="modal-body">
+                <div class="modal-body" style="text-align: left;">
                <p>Deberás cumplir con los siguientes protocolos:</p>
                <ol>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              </ol>
+                <li>Llenar el formulario de adopción</li>
+                <li>Pasar por la entrevista telefónica</li>
+                <li>Visita a domicilio </li>
+               </ol>
                 </div>
                   <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -71,13 +71,13 @@
     </div>
   <div class="card-container-two">
     <div class="card1">
-      <div class="allpictures"><img src="Images/Blacky.jpg" alt=""></div>
+      <div class="allpictures"><img src="Images/Blacky.jpg" alt="" ></div>
       <h2>Blacky</h2>
         <div class="description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
-        Numquam, quae dicta accusantium beatae reprehenderit </br>
-        possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat  </br>
-        quidem, consequuntur enim iure tempora pariatur?
+        Macho de 1 año y medio, talla grande</br>
+        Blacky es muy juguetón y cariñoso. Convive con perros y gatos </br>
+        Busca una familia para siempre, convive con niños </br>
+        Cuenta con protocolo completo (vacunas, desparacitación, etc)
           <!-- Button trigger modal -->
           <div class="adoptame">
             <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
@@ -93,11 +93,10 @@
                 <div class="modal-body">
                <p>Deberás cumplir con los siguientes protocolos:</p>
                <ol>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              </ol>
+                <li>Llenar el formulario de adopción</li>
+                <li>Pasar por la entrevista telefónica</li>
+                <li>Visita a domicilio </li>
+               </ol>
                 </div>
                   <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -109,12 +108,12 @@
       </div>
     </div>
       <div class="card1">
-        <div class="allpictures"><img src="Images/Jack.jpg" alt=""></div>
+        <div class="allpictures"><img src="Images/Jack.jpg" alt="" ></div>
         <h2>Jack</h2>
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit. </br>
-         Numquam, quae dicta accusantium beatae reprehenderit </br>
-         possimus dolorem odit quas a ipsum at voluptatem, ipsa quaerat </br>
-         quidem, onsequuntur enim iure tempora pariatur?
+        Macho de 5 años talla mediana</br>
+        Convive con perros pero no con gatos </br>
+        No convive con niños </br>
+        Cuenta con protocolo completo 
           <!-- Button trigger modal -->
           <div class="adoptame">
             <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
@@ -130,11 +129,10 @@
                 <div class="modal-body">
                <p>Deberás cumplir con los siguientes protocolos:</p>
                <ol>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              </ol>
+                <li>Llenar el formulario de adopción</li>
+                <li>Pasar por la entrevista telefónica</li>
+                <li>Visita a domicilio </li>
+               </ol>
                 </div>
                   <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -147,14 +145,13 @@
     </div>
     <div class="card-container-three">
       <div class="card1">
-        <div class="allpictures"><img src="Images/kuky.jpg" alt=""></div>
-        <h2>Kuky</h2>
-        Lorem ipsum, dolor sit amet consectetur </br>
-        adipisicing elit. Numquam, quae dicta </br>
-        accusantium beatae reprehenderit </br>
-        possimus dolorem odit quas a ipsum at </br>
-        voluptatem, ipsa quaerat quidem, </br>
-        consequuntur enim iure tempora pariatur?
+        <div class="allpictures"><img src="Images/Luna.jpg" alt="" ></div>
+        <h2>Luna</h2>
+        Hembra de 8 meses, talla chica </br>
+        Luna le encanta estar acompañada</br>
+        No convive con perros ni gatos</br>
+        Convive con niños </br>
+        Cuenta con protocolo completo 
           <!-- Button trigger modal -->
           <div class="adoptame">
             <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
@@ -170,11 +167,10 @@
                 <div class="modal-body">
                <p>Deberás cumplir con los siguientes protocolos:</p>
                <ol>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              </ol>
+                <li>Llenar el formulario de adopción</li>
+                <li>Pasar por la entrevista telefónica</li>
+                <li>Visita a domicilio </li>
+               </ol>
                 </div>
                   <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -185,14 +181,13 @@
           </div>
       </div>
       <div class="card1">
-        <div class="allpictures"><img src="Images/wisko.jpeg" alt=""></div>
+        <div class="allpictures"><img src="Images/wisko.jpeg" alt="" ></div>
         <h2>Wisko</h2>
-        Lorem ipsum, dolor sit amet consectetur </br>
-        adipisicing elit. Numquam, quae dicta </br>
-        accusantium beatae reprehenderit </br>
-        possimus dolorem odit quas a ipsum at </br>
-        voluptatem, ipsa quaerat quidem, </br>
-        consequuntur enim iure tempora pariatur?
+        Macho 1 año y medio </br>
+        Es un gato muy cariñoso </br>
+        Convive con perros y gatos</br>
+        Le toma unos días adaptarse </br>
+        De preferencia niños de 10+ años </br>
           <!-- Button trigger modal -->
           <div class="adoptame">
             <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
@@ -208,11 +203,10 @@
                 <div class="modal-body">
                <p>Deberás cumplir con los siguientes protocolos:</p>
                <ol>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              </ol>
+                <li>Llenar el formulario de adopción</li>
+                <li>Pasar por la entrevista telefónica</li>
+                <li>Visita a domicilio </li>
+               </ol>
                 </div>
                   <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -223,14 +217,13 @@
           </div>
      </div>
       <div class="card1">
-      <div class="allpictures"><img src="Images/Kaira.jpeg" alt=""></div>
+      <div class="allpictures"><img src="Images/Kaira.jpeg" alt="" ></div>
        <h2>Kaira</h2>
-       Lorem ipsum, dolor sit amet consectetur </br>
-       adipisicing elit. Numquam, quae dicta </br>
-       accusantium beatae reprehenderit </br>
-       possimus dolorem odit quas a ipsum at </br>
-       voluptatem, ipsa quaerat quidem, </br>
-       consequuntur enim iure tempora pariatur?
+       Hembra de 5 años</br>
+       Es una perrita muy cariñosa</br>
+       No convive con otros perros</br>
+       No convive con otros gatos</br>
+       De preferencia niños de 12+ años </br>
           <!-- Button trigger modal -->
           <div class="adoptame">
             <i class="bi bi-bag-heart" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-size: larger;"></i>
@@ -246,11 +239,10 @@
                 <div class="modal-body">
                <p>Deberás cumplir con los siguientes protocolos:</p>
                <ol>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-              </ol>
+                <li>Llenar el formulario de adopción</li>
+                <li>Pasar por la entrevista telefónica</li>
+                <li>Visita a domicilio </li>
+               </ol>
                 </div>
                   <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -261,7 +253,7 @@
           </div>
       </div>
   </div>
-  <h3 style="text-align: center;"> Categorías de amigos</h3>
+  <h3 style="text-align: center;"> <b> Categorías de amigos</b></h3>
   <div class="card-container-four">
     <div class="card1">
       <h1>Perros</h1> 
@@ -357,6 +349,9 @@
     <p> <a href="#Terminos">Confianza y seguridad</a></p>
   </div>
 </div>
+</div>
+<div class="box">
+
 </div>
     <footer class="footer">
       <p>Todos los derechos reservados<br>
