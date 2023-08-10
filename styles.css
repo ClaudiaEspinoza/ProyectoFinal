@@ -1,0 +1,50 @@
+
+.huellas {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.huellas > div {
+    position: relative;
+    flex: 1;
+    margin: 20px;
+}
+
+.patita1 {
+    transform: rotate(79deg);
+    position: absolute;
+    top: 30%;
+    left: 0;
+}
+
+.patita2 {
+    transform: rotate(83deg);
+    position: absolute;
+    top: 47%;
+    left: 0;
+}
+
+.patita3 {
+    transform: rotate(102deg);
+    position: absolute;
+    top: 28px;
+    left: 0;
+}
+
+.patita4 {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 47%;
+    left: 0;
+}
+
+.patita5 {
+    transform: rotate(94deg);
+    position: absolute;
+    top: 10%;
+}
+
